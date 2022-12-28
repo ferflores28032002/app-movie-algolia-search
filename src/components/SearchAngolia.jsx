@@ -46,7 +46,7 @@ export default function SearchAngolia(props) {
   return (
     <form
       ref={formRef}
-      className="flex justify-center py-20"
+      className="flex justify-center pt-20 pb-10"
       {...formProps}
     >
       <div className="flex relative text-sm py-2 rounded-full lg:w-2/6 w-[88%]">

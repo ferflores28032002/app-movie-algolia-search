@@ -27,7 +27,7 @@ export const MovieCard = () => {
   }, [search]);
 
   return (
-    <div className="flex   gap-4 justify-center  items-center container">
+    <div className="flex  gap-4 justify-center  items-center container">
       {estado ? (
         <div className="lg:shadow-2xl flex flex-col lg:flex-row  gap-6 items-center p-10 rounded-2xl">
           <div>
@@ -41,7 +41,7 @@ export const MovieCard = () => {
             <h1 className="text-indigo-500 text-center font-semibold my-3">
               {movie.title}
             </h1>
-            <p className="text-sm">{movie.overview}</p>
+            <p className="text-sm text-justify">{movie.overview}</p>
             <p className="text-sm">
               {movie.genres.map((genre) => genre.name).join(", ")}
             </p>
