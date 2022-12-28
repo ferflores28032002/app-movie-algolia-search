@@ -37,8 +37,8 @@ export const MovieCard = () => {
             />
           </div>
 
-          <div className="w-96">
-            <h1 className="text-indigo-500 text-center font-semibold my-3">
+          <div className="w-96 text-white">
+            <h1 className=" text-center font-semibold my-3">
               {movie.title}
             </h1>
             <p className="text-sm text-justify">{movie.overview}</p>
@@ -46,7 +46,7 @@ export const MovieCard = () => {
               {movie.genres.map((genre) => genre.name).join(", ")}
             </p>
             <div className="flex gap-4 justify-center lg:justify-start items-center mt-3">
-              <p className="rounded-full w-16 h-16 bg-indigo-400 text-white text-sm flex items-center justify-center">
+              <p className="rounded-full w-16 h-16 bg-indigo-600 shadow-2xl text-white text-sm flex items-center justify-center">
                 {movie.popularity}
               </p>
               <p>{movie.status}</p>
